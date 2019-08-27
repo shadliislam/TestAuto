@@ -10,6 +10,7 @@ public class NinjaStoreHomePage{
     private By loginButton=By.xpath("//div[@id=\"top-links\"]/ul/li[2]/ul/li[2]/a");
 
     public NinjaStoreHomePage(WebDriver driver){
+
         this.driver=driver;
     }
 

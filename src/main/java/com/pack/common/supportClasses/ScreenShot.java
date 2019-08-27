@@ -1,27 +1,22 @@
-package supportClass;
+package com.pack.common.supportClasses;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.File;
 import java.io.IOException;
 
-public class ScreenShot{
+public class ScreenShot {
 
-    ProjectWebDriver projectWebDriver;
-    WebDriver driver;
-    String destPath="C:\\Users\\shadl\\IdeaProjects\\TestAuto\\src\\main\\logReports\\";
+    private WebDriver driver;
 
-    public ScreenShot() {
-        projectWebDriver=new ProjectWebDriver();
-        driver=projectWebDriver.getWebDriver();
+    public ScreenShot(WebDriver driver) {
+        this.driver = driver;
     }
-    public ScreenShot(WebDriver driver){
-        this.driver=driver;
-    }
+
+    String destPath="C:\\Users\\shadl\\IdeaProjects\\TestAuto\\src\\main\\java\\com\\pack\\logReports\\";
 
     public void CaptureScreenShot(String fileName) {
 

@@ -25,7 +25,7 @@ public class MyAccountPage {
     }
 
     public boolean verifyMyAccPageTitle(){
-        String expectedTitle="Account Login";
+        String expectedTitle="Account jLogin";
         return getMyAccPageTitle().contains(expectedTitle);
     }
 
@@ -45,6 +45,7 @@ public class MyAccountPage {
         enterUserName("test");
         enterPassword("pass");
         clickOnLogin();
+
         return getWarningMessage().contains("No match");
     }
 

@@ -1,14 +1,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Page Object test">
+<suite name="Page Object test" configfailurepolicy="continue">
 <parameter name="appURL" value="http://tutorialsninja.com/demo/index.php?route=common/home"/>
 <parameter name="browserType" value="chrome"/>
 <test name="sample test">
     <classes>
+        <!--
         <class name="com.pack.common.tests.NInjaStoreHomeTest" />
+        -->
         <class name="com.pack.common.tests.MyAccountTest" />
-        <class name="com.pack.common.tests.RegisterAccountTest" />
+       <!-- <class name="com.pack.common.tests.RegisterAccountTest" />-->
     </classes>
 </test>
 </suite>
-
-

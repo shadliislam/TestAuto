@@ -16,6 +16,7 @@ public class RegisterAccountTest extends TestBaseSetup {
     private RegisterAccountPage registerAccPage;
 
 
+
     @BeforeClass
     public void setUp(){
         driver=getDriver();
